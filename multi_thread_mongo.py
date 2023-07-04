@@ -39,7 +39,7 @@ def split_2(collection, begin_id: int, end_id: int) -> int:
             return mid_id
 
 
-# 返回16进制字符串格式
+# 返回int格式的列表
 def split_n(collection, n) -> list:
     # 升序排列，取得最低_id
     begin = collection.find({}, {"_id": 1}).sort([("_id", 1)]).limit(1)[0]['_id']
